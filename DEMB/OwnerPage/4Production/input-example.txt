@@ -1,0 +1,5 @@
+#Input file format:
+#OpcO_nr,Path,y[,n]
+#"y" indicates departement level folder is included in path 
+#"n" indicates NO departement level folder is included in path 
+#9000,D:\Data\9000,y

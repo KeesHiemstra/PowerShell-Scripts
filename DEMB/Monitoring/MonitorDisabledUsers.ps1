@@ -1,0 +1,4 @@
+﻿Get-ADUser -Filter { Enabled -eq $False -and ExtensionAttribute5 -ne 'Mailbox' } -Properties Mail, MemberOf, ExtensionAttribute5, ExtensionAttribute2, ExtensionAttribute11, WhenCreated, WhenChanged, Manager, ExtensionAttribute15 |
+    Where-Object { ($_.MemberOf -join ';') -notmatch 'To-Be-Deleted-...' -and $_.DistinguishedName -notlike '*,OU=Resources,OU=Exchange,OU=Support,DC=corp,DC=demb,DC=com' -and $_.DistinguishedName -notlike '*,CN=Users,DC=corp,DC=demb,DC=com' } |
+    Select-Object SAMAccountName, Mail, ExtensionAttribute5, WhenCreated, WhenChanged, ExtensionAttribute2, ExtensionAttribute11, Manager, ExtensionAttribute15, DistinguishedName |
+    ConvertTo-Csv -Delimiter "`t" -NoTypeInformation | Clip

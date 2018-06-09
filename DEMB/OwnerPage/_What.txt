@@ -1,0 +1,14 @@
+Owner.htm // OwnerPage process
+------------------------------
+
+The old OwnerPage process, based on a vbs script, has been replaced by a PowerShell script called OnwerPage.ps1.
+
+To avoid making new schedules, the _Start.bat has been reused and the original one has been renamed to _Start.bat.org.
+
+The new process still uses the Input.txt file to determine which folders need to be processed and the structure hasn't changed.
+
+The OwnerPage.log contains the start and end time and serious errors if these occur.
+
+The OwnerPage.ps1 is automatically updated from the \\corp.demb.com\NetLogon\SOE\OwnerPage folder every time the _Start.bat is started.
+
+

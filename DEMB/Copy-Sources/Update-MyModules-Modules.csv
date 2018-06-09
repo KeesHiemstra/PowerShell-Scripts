@@ -1,0 +1,11 @@
+Module,SourcePath
+SOEAzure,C:\Src\PowerShell\3.0\SOE Tools\Modules\SOEAzure
+SOEComputer,C:\Src\PowerShell\3.0\SOE Tools\Modules\SOEComputer
+SOEDatabase,C:\Src\PowerShell\3.0\SOE Tools\Modules\SOEDatabase
+SOETools,C:\Src\PowerShell\3.0\SOE Tools\Modules\SOETools
+SOEAD,C:\Src\PowerShell\3.0\SOE Tools\Modules\SOEAD
+SOEDistrPoint,C:\Src\PowerShell\3.0\SOE Tools\Modules\SOEDistrPoint
+AssetManagement,C:\Src\PowerShell\3.0\SOE Tools\Modules\AssetManagement
+Sandboxing,C:\Src\PowerShell\5.1\Modules\Sandboxing
+CHiTools,C:\Src\PowerShell\5.1\Modules\CHiTools
+IDM,C:\Src\PowerShell\3.0\SOE Tools\Modules\IDM

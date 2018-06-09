@@ -1,0 +1,61 @@
+ComputerName	c	co	l	description	comment	TimeZone	type	delivContLength	IPv4Address
+DEMBVIEDP712	AT	Austia	Vienna			Central Europe Standard Time	DP OiaB	500	10.4.24.21
+DEMBSYDP001	AU	Australia	Gordon	SCCM DP Gordon (AU) - HP Z400 (SGH232Q2P1)		AUS Eastern Standard Time	DP Onsite	670	10.138.111.90
+DEMBKGDP001	AU	Australia	Kingsgrove	SCCM DP Kingsgrove (AU) - HP Z400 (SGH232Q2P2)		AUS Eastern Standard Time	DP Full	10	10.141.14.19
+DEMBMSQDP717	BY	Belarus	Minsk			Belarus Standard Time	DP OiaB	500	10.5.129.21
+DEMBGRDP001	BE	Belgium	Grimbergen	SCCM DP Grimbergen (BE) - HP Z400 (CZC2310XJS)		Central Europe Standard Time	DP Onsite	800	10.141.59.223
+DEMBSPDP001	BR	Brazil	Barueri	SCCM DP Barueri (BR) - HP Z420 (2UA2380VDH)		E. South America Standard Time	DP	1	10.141.136.221
+DEMBJUNDP001	BR	Brazil	Jundia	SCCM DP Jundiaφ (BR) - HP420 (2UA2380VDK)	Hardware needs to be replaced	E. South America Standard Time	DP	1	
+DEMBPIRDP001	BR	Brazil	Piraja	SCCM DP Piraja (BR) - PH Z420 (2UA2380VDL)		E. South America Standard Time	DP	100	10.141.155.212
+DEMBSADP001	BR	Brazil	Santos	SCCM DP Santos (BR) - HP Z420 (2UA2380VDJ)		E. South America Standard Time	DP	1	10.141.156.184
+DEMBALPAPS082	BR	Brazil	Servidor	Servidor SCCM (BR) - ProLiant BL465c G7 (2M203001NU)		E. South America Standard Time	DP Server	390	10.141.151.98
+DEMBKBRDP707	BG	Bulgaria	Kostinbrod			E. Europe Standard Time	DP OiaB	500	10.11.162.21
+DEMBSOFDP702	BG	Bulgaria	Sofia			E. Europe Standard Time	DP OiaB	500	10.4.66.21
+DEMBGGZDP892	CN	China	Guangzhou			China Standard Time	DP OiaB	500	10.11.249.21
+DEMBSHDP001	CN	China	Shanghai	SCCM DP Shanghai (CN) - HP420 (CNG242WDLW)		China Standard Time	DP	1	10.132.120.231
+DEMBCZDP001	CZ	Czech Republic	Prague	SCCM DP Prague (CZ) - HP Z400 (CZC23064WM)		Central Europe Standard Time	DP	370	10.141.42.135
+DEMBPRDP882	CZ	Czech Republic	Prague	Office in a Box server		Central Europe Standard Time	DP OiaB	370	10.141.42.135
+DEMBVMZDP722	CZ	Czech Republic	Valasske Mezirici			Central Europe Standard Time	DP OiaB	500	10.11.135.21
+DEMBBRYDP777	DK	Denmark	Broenby			Central Europe Standard Time	DP OiaB	500	10.5.25.21
+DEMBMFDP001	DK	Denmark	Middlefart	SCCM DP Middlefart (DK) - HP Z400 (CZC230674Y)		Central Europe Standard Time	DP Onsite	690	10.141.203.222
+DEMBAZDP001	FR	France	Andrezieux	SCCM DP Andrezieux (FR) - HP Z400 (CZC230674W)		Central Europe Standard Time	DP Full	250	10.135.139.129
+DEMBCLADP762	FR	France	Clamart			Central Europe Standard Time	DP OiaB	500	10.5.9.21
+DEMBLVFDP772	FR	France	Laverune			Central Europe Standard Time	DP OiaB	500	10.7.7.21
+DEMBNYCDP767	FR	France	Noyelles les Seclin			Central Europe Standard Time	DP OiaB	500	10.9.97.21
+DEMBTBSDP782	GE	Georgia	Tbilisi			Georgian Standard Time	DP OiaB	500	10.5.137.21
+DEMBBERDP732	DE	Germany	Berlin			Central Europe Standard Time	DP OiaB	500	10.9.17.21
+DEMBHEMDP752	DE	Germany	Bremen-Hemelingen			Central Europe Standard Time	DP OiaB	500	10.11.26.21
+DEMBBREDP742	DE	Germany	Bremen-Lama			Central Europe Standard Time	DP OiaB	500	10.5.77.21
+DEMBELMDP737	DE	Germany	Elmshorn			Central Europe Standard Time	DP OiaB	500	10.9.39.21
+DEMBHOLDP757	DE	Germany	Holzhafen			Central Europe Standard Time	DP OiaB	500	10.7.205.21
+DEMBMZDP001	DE	Germany	Mainz	SCCM DP Mainz (DE) - HP Z400 (CZC23068B0)		Central Europe Standard Time	DP Full	80	10.142.12.174
+DEMBATHDP787	GR	Greece	Athens			E. Europe Standard Time	DP OiaB	500	10.4.104.21
+DEMBBUDDP802	HU	Hungary	Budapest			Central Europe Standard Time	DP OiaB	500	10.4.34.21
+DEMBAZODP797	IT	Italy	Andezeno			Central Europe Standard Time	DP OiaB	800	10.7.34.21
+DEMBMILDP792	IT	Italy	Milan			Central Europe Standard Time	DP OiaB	500	10.5.38.21
+DEMBALADP807	KZ	Kazakhstan	Almaty			Central Asia Standard Time	DP OiaB	500	10.5.145.21
+DEMBKUNDP812	LT	Lithuania	Kaunas			E. Europe Standard Time	DP OiaB	500	10.5.113.21
+DEMBCASDP817	MA	Morocco	Casablanca			Morocco Standard Time	DP OiaB	500	10.9.68.21
+DEMBAMSDP001	NL	Netherlands	Amsterdam	SCCM DP Amsterdam (NL) - HP Z420 (CZC2385CTY)		Central Europe Standard Time	DP Onsite	935	10.128.158.7
+DEMBJODP001	NL	Netherlands	Joure	SCCM DP Joure (NL) - HP Z400 (CZC2299CNX)		Central Europe Standard Time	DP Onsite	970	10.128.38.228
+DEMBUTSC239	NL	Netherlands	Utrecht	SCCM DP Utrecht (NL) - HP ProLiant BL465c G1 (GB8721FCTL)		Central Europe Standard Time	DP Onsite	990	10.128.111.76
+DEMBAKDP001	NZ	New Zealand	Auckland	SCCM DP Auckland (NZ) - HP Z400 (SGH232Q2NZ)		New Zealand Standard Time	DP Full	15	10.132.230.166
+DEMBPNDP002	PL	Poland	Poznan Factory	SCCM DP Poznan Factory (PL) - HP Z420 (CZC3341C55)		Central Europe Standard Time	DP	30	10.142.27.127
+DEMBWAWDP897	PL	Poland	Warsaw			Central Europe Standard Time	DP OiaB	500	10.142.206.165
+DEMBBUHDP822	RO	Romania	Bucharest			E. Europe Standard Time	DP OiaB	500	10.4.52.21
+DEMBMOWDP827	RU	Russia	Moscow			Russian Standard Time	DP OiaB	500	10.5.175.21
+DEMBSPEFDP832	RU	Russia	St Petersburg			Russian Standard Time	DP OiaB	500	10.11.209.21
+DEMBJNBDP842	ZA	South Africa	Johannesburg			South Africa Standard Time	DP OiaB	500	10.4.81.21
+DEMBBCNDP001	ES	Spain	Diagonal Mar	SCCM DP Diagonal Mar (ES) - HP Z400 (CZC23067BD)		Central Europe Standard Time	DP Onsite	650	10.136.1.59
+DEMBMLLDP001	ES	Spain	Mollet	SCCM DP Mollet (ES) - HP Z400 (CZC23067BF)		Central Europe Standard Time	DP Onsite	230	10.141.7.166
+DEMBGVXDP862	SE	Sweden	Gavle			Central Europe Standard Time	DP OiaB	500	10.7.132.21
+DEMBMADP001	SE	Sweden	Malmoe	SCCM DP Malmoe (SE) - HP Z400 (CZC2313N5H)		Central Europe Standard Time	DP Full	20	10.142.213.131
+DEMBSTODP847	SE	Sweden	Stockholm			Central Europe Standard Time	DP OiaB	500	10.4.148.21
+DEMBZUGDP857	CH	Switserland	Zug			Central Europe Standard Time	DP OiaB	500	10.5.98.21
+DEMBZRHDP852	CH	Switzerland	Zurich (BU)			Central Europe Standard Time	DP OiaB	500	10.5.194.21
+DEMBTHDP002	TH	Thailand	Bangkok Factory	SCCM DP Bangkok Factory (TH) - HPZ400 (SGH236S08S)		SE Asia Standard Time	DP	50	10.132.40.247
+DEMBTHDP001	TH	Thailand	Bangkok Office	SCCM DP Bangkok Office (TH) - HPZ400 (SGH236S08R)		SE Asia Standard Time	DP	400	10.132.35.247
+DEMBKCODP867	TR	Turkey	Kocaeli			E. Europe Standard Time	DP OiaB	500	10.5.121.21
+DEMBIEVDP887	UA	Ukraine	Kiev			E. Europe Standard Time	DP OiaB	500	10.4.132.21
+DEMBBABDP872	GB	United Kingdom	Banbury			GMT Standard Time	DP OiaB	500	10.7.77.21
+DEMBHUDP001	GB	United Kingdom	Hurley	SCCM DP Hurley (GB) - HP Z400 (CZC2306P40)		GMT Standard Time	DP Onsite	500	10.142.135.4

@@ -1,0 +1,25 @@
+action,name,port,protocol,alias,comment
+ADD,sapmsBWK,3633,tcp,,SAP GUI 7.1
+ADD,sapmsCMK,3601,tcp,,SAP GUI 7.1
+ADD,sapmsERK,3653,tcp,,SAP GUI 7.1
+ADD,sapmsSCK,3619,tcp,,SAP GUI 7.1
+ADD,sapmsR3P,3622,tcp,,SAP GUI 7.1
+ADD,sapmsAPP,3600,tcp,,SAP GUI 7.1
+ADD,sapmsBWP,3612,tcp,,SAP GUI 7.1
+ADD,sapmsCMP,3688,tcp,,SAP GUI 7.1
+ADD,sapmsBWQ,3611,tcp,,SAP GUI 7.1
+ADD,sapmsERQ,3673,tcp,,SAP GUI 7.1
+ADD,sapmsCMQ,3603,tcp,,SAP GUI 7.1
+ADD,sapmsSCQ,3675,tcp,,SAP GUI 7.1
+ADD,sapmsERM,3675,tcp,,SAP GUI 7.1
+ADD,sapmsCMM,3696,tcp,,SAP GUI 7.1
+ADD,sapmsSC1,3610,tcp,,SAP GUI 7.1
+ADD,sapmsSC2,3638,tcp,,SAP GUI 7.1
+ADD,sapmsNVP,3640,tcp,,SAP GUI 7.1
+ADD,sapmsEAC,3606,tcp,,SAP GUI 7.1
+ADD,sapmsECP,3603,tcp,,SAP GUI 7.1
+ADD,sapmsEVE,3600,tcp,,SAP GUI 7.1
+ADD,sapmsEVP,3600,tcp,,SAP GUI 7.1
+ADD,sapmsWVP,3610,tcp,,SAP GUI 7.1
+ADD,sapmsSVP,3650,tcp,,SAP GUI 7.1
+ADD,sapmsXVP,3660,tcp,,SAP GUI 7.1
