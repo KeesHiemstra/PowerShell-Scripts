@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28010.2041
+VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "Get-LocalAdmin", "Get-LocalAdmin\Get-LocalAdmin.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
-EndProject
-Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "AnalyseEnvironment", "AnalyseEnvironment\AnalyseEnvironment.pssproj", "{565D61B7-86C3-4D4C-BF3D-5900310BB7A8}"
+Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "ReadWebPage", "ReadWebPage\ReadWebPage.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,15 +15,11 @@ Global
 		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.Build.0 = Release|Any CPU
-		{565D61B7-86C3-4D4C-BF3D-5900310BB7A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{565D61B7-86C3-4D4C-BF3D-5900310BB7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{565D61B7-86C3-4D4C-BF3D-5900310BB7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{565D61B7-86C3-4D4C-BF3D-5900310BB7A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7B26F228-04D1-4F8D-9FA0-9B9EEF6A103A}
+		SolutionGuid = {12B6AD63-96D6-4558-896F-98692CFB2A61}
 	EndGlobalSection
 EndGlobal
