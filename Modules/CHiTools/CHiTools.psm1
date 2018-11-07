@@ -455,52 +455,6 @@ function Send-ObjectAsHTMLTableMessage
 #endregion
 
 
-#region Get-Password
-
-<#
-.SYNOPSIS
-    Decrypt the password from the provided credential object.
-
-.DESCRIPTION
-    Decryption works only in this way when the encryption is done on the same computer.
-
-.EXAMPLE
-    Get-Password -Credential $Cred
-
-    >> This will return the password in plain text.
-.INPUTS
-    [System.Management.Automation.PSCredential]
-
-.NOTES
-   === Version history
-   Version 1.00 (2015-11-10, Kees Hiemstra)
-   - Initial version.
-#>
-function Get-Password
-{
-    [CmdletBinding()]
-    [OutputType([string])]
-    Param
-    (
-        # Credential for which the password needs to be decrypted.
-        [Parameter(Mandatory=$true, 
-                   ValueFromPipeline=$false,
-                   ValueFromPipelineByPropertyName=$false, 
-                   ValueFromRemainingArguments=$false)]
-        [ValidateNotNull()]
-        [System.Management.Automation.PSCredential]
-        $Credential
-    )
-
-    Process
-    {
-        Write-Output $Credential.GetNetworkCredential().Password
-    }
-}
-
-#endregion
-
-
 #region Write-Speech
 
 <#
@@ -557,6 +511,7 @@ function Write-Speech
 }
 
 #endregion
+
 
 #region Get-TypeName
 
@@ -637,3 +592,204 @@ function Get-TypeName
 }
 
 #endregion
+
+
+#region Test-IsElevated
+
+<#
+.SYNOPSIS
+    Test if the current process runs under elevated privileges.
+
+.DESCRIPTION
+    Some tasks need to be performed whilst the process runs under elevated privileges. This cmdlet returns true if the current process is running under elevated privileges.
+
+.EXAMPLE
+    PS> Test-IsElevated
+    ---
+    >> When the process is started normally, the cmdlet will return false.
+    False
+
+    >> When the process is running with elevated privileges, the cmdlet will return true.
+    True
+
+.EXAMPLE
+    Test-IsElevated -Verbose
+
+    >> When the process is started normally, the cmdlet will return false.
+    VERBOSE: The process is running under normal privileges
+    False
+
+    >> When the process is running with elevated privileges, the cmdlet will return true.
+    VERBOSE: The process is running under elevated privileges
+    True
+
+.INPUTS
+    There are no inputs.
+
+.OUTPUTS
+    [bool]
+
+.NOTES
+    --- Version history
+    Version 1.00 (2016-01-31, Kees Hiemstra)
+    - Inital version.
+
+.LINK
+
+.LINK
+
+#>
+function Test-IsElevated
+{
+    [CmdletBinding(SupportsShouldProcess=$false, 
+                   PositionalBinding=$false,
+                   ConfirmImpact='Low')]
+    [OutputType([bool])]
+    Param
+    (
+    )
+
+    Process
+    {
+        $WindowsIdentity = [System.Security.Principal.WindowsIdentity]::GetCurrent()
+        if ($WindowsIdentity.Owner -ne $WindowsIdentity.User)
+        {
+            Write-Verbose "The process is running under elevated privileges"
+            Write-Output $true
+        }
+        else
+        {
+            Write-Verbose "The process is running under normal privileges"
+            Write-Output $false
+        }
+    }
+}
+
+#endregion
+
+
+#region Get-ShortString
+
+<#
+.SYNOPSIS
+    Shorten string to selected length and replace the last 3 characters with ... if the string is longer.
+
+.DESCRIPTION
+    This function shortens the length of the input to given length.  will be returned if the input is null or an empty string, unless the parameter -NoEmpty is given.
+
+    The last 3 characters will be replaced by ... if the string is longer than the given length.
+
+    The length is by default 36.
+
+.EXAMPLE
+    PS> Get-ShortString -String 'This is a long string' -Length 21
+    ---
+    This is a long string
+
+.EXAMPLE
+    PS> Get-ShortString -String 'This is a longer string' -Length 21
+    ---
+    This is a longer s...
+
+.EXAMPLE
+    PS> Get-ShortString -String ''
+    ---
+    <empty>
+
+.EXAMPLE
+    PS> Get-ShortString -String '' -EmptyText '...'
+    ---
+    ...
+
+.INPUTS
+    [string[]]
+
+.OUTPUTS
+    [string]
+
+.NOTES
+   --- Version history
+   Version 1.00 (2016-09-01, Kees Hiemstra)
+   - Initial version.
+
+#>
+function Get-ShortString
+{
+    [CmdletBinding(DefaultParameterSetName='Parameter Set 1', 
+                   SupportsShouldProcess=$false,
+                   PositionalBinding=$true,
+                   ConfirmImpact='Low')]
+    [OutputType([String])]
+    Param
+    (
+        # Param1 help description
+        [Parameter(Mandatory=$false, 
+                   ValueFromPipeline=$true,
+                   ValueFromPipelineByPropertyName=$true,
+                   ValueFromRemainingArguments=$false,
+                   Position=0,
+                   ParameterSetName='Parameter Set 1')]
+        [string[]]
+        $String,
+
+        [Parameter(Mandatory=$false, 
+                   ValueFromPipeline=$false,
+                   ValueFromPipelineByPropertyName=$false,
+                   ValueFromRemainingArguments=$false,
+                   Position=1,
+                   ParameterSetName='Parameter Set 1')]
+        [int]
+        $Length = 36,
+
+        [Parameter(Mandatory=$false, 
+                   ValueFromPipeline=$false,
+                   ValueFromPipelineByPropertyName=$false,
+                   ValueFromRemainingArguments=$false,
+                   Position=2,
+                   ParameterSetName='Parameter Set 1')]
+        [string]
+        $EmptyText = '<empty>',
+
+        [Parameter(Mandatory=$false, 
+                   ValueFromPipeline=$true,
+                   ValueFromPipelineByPropertyName=$true, 
+                   ValueFromRemainingArguments=$false, 
+                   Position=3,
+                   ParameterSetName='Parameter Set 1')]
+        [switch]
+        $NoEmpty
+    )
+
+    Process
+    {
+        foreach ( $Item in $String )
+        {
+            $Item = $Item.TrimEnd()
+
+            if ( [string]::IsNullOrWhiteSpace($Item) )
+            {
+                if ( $NoEmpty.IsPresent )
+                {
+                    $Output = [string]::Empty
+                }
+                else
+                {
+                    $Output = $EmptyText
+                }
+            }
+            elseif ( $Item.Length -le $Length )
+            {
+                $Output = $Item
+            }
+            else
+            {
+                $Output = "$($Item.Substring(0, $Length - 3))..."
+            }
+
+            Write-Output $Output
+        }#foreach
+    }
+}
+
+#endregion
+
